@@ -1,6 +1,6 @@
 @define-color selected-text white;
 @define-color text #c6d0f5;
-@define-color base rgba(15, 15, 15, 0.01);
+@define-color base rgba(15, 15, 15, 0.8);
 @define-color border rgba(255, 255, 255, 0.1);
 @define-color foreground #c6d0f5;
 @define-color background rgba(200, 200, 200, 0.8);
@@ -16,16 +16,16 @@
 child:selected {
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.01);
-  transition: all 0.9s ease-in;
-  transition: background-color 0.5s ease;
+  transition: all 0.9s ease;
+  transition: background 0.5s ease;
   border: 2px solid rgba(200, 200, 200, 0.1);
   font-weight: 900;
   padding: 0.1px;
 }
 
 child:selected .item-box {
-  transition: all 0.3s ease;
-  margin-left: 0px;
+  transition: all 0.1s ease;
+  margin-left: 5px;
 }
 
 /* Revert Selected Item Color */
@@ -42,11 +42,11 @@ child:selected .item-box * {
 
 /* Transparent Search Bar */
 .search-container {
-  background-color: transparent;
+  background-color: red;
 }
 
 #window {
-  background: rgba(30, 30, 30, 0.01);
+  background: rgba(30, 30, 30, 0.5);
   padding: 10px;
   /* If there are other background properties, ensure they don't override this */
 }
