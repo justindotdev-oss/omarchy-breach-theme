@@ -5,9 +5,11 @@
 @define-color foreground #c6d0f5;
 @define-color background rgba(200, 200, 200, 0.8);
 
+
+
 /* Rounded Corners */
 .box-wrapper {
-  border-radius: 18px;
+  border-radius: 10px;
 }
 
 /* Selected Item Styling */
@@ -18,10 +20,11 @@ child:selected {
   transition: background-color 0.5s ease;
   border: 2px solid rgba(200, 200, 200, 0.1);
   font-weight: 900;
+  padding: 0.1px;
 }
 
 child:selected .item-box {
-  transition: all 0.09s ease-in;
+  transition: all 0.3s ease;
   margin-left: 0px;
 }
 
@@ -44,5 +47,12 @@ child:selected .item-box * {
 
 #window {
   background: rgba(30, 30, 30, 0.01);
+  padding: 10px;
   /* If there are other background properties, ensure they don't override this */
+}
+
+.preview {
+  border: 1.5px solid alpha(@foreground, 0.1);
+  /* padding: 10px; */
+  border-radius: 10px;
 }
